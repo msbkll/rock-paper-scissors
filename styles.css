@@ -25,10 +25,34 @@ body {
 
 }
 
-/* .counter .player-score {
-    margin-right: 40px;
+.counter .player-score {
+    color: green;
 }
 
 .counter .computer-score {
-    margin-left: 40px
-} */
+    color: red;
+}
+
+
+.end-score {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.choices {
+    margin-top:60px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.choices img {
+    height: 200px;
+    width: 200px;
+
+}
+
+.choices img:nth-child(2) {
+    height: 150px;
+    width: 150px;
+}
+
