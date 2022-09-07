@@ -1,0 +1,34 @@
+body {
+    background-color: #C05746;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreboard {
+    text-align: center;
+    
+}
+
+.above-counter{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+
+.counter {
+    display:flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+
+}
+
+/* .counter .player-score {
+    margin-right: 40px;
+}
+
+.counter .computer-score {
+    margin-left: 40px
+} */
