@@ -26,11 +26,11 @@ body {
 }
 
 .counter #player-score {
-    color: green;
+    color: darkgreen;
 }
 
 .counter #computer-score {
-    color: red;
+    color: darkred;
 }
 
 
@@ -67,9 +67,9 @@ body {
 }
 
 .round-result .choice-space #round-choice-computer {
-    color: red;
+    color: darkred;
 }
 
 .round-result .choice-space #round-choice-player {
-    color: green;
+    color: darkgreen;
 }
