@@ -1,0 +1,58 @@
+body {
+    background-color: #C05746;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreboard {
+    text-align: center;
+    
+}
+
+.above-counter{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+
+.counter {
+    display:flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+
+}
+
+.counter .player-score {
+    color: green;
+}
+
+.counter .computer-score {
+    color: red;
+}
+
+
+.end-score {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.choices {
+    margin-top:60px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.choices img {
+    height: 200px;
+    width: 200px;
+
+}
+
+.choices img:nth-child(2) {
+    height: 150px;
+    width: 150px;
+}
+
