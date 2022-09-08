@@ -57,11 +57,19 @@ body {
 }
 
 .round-result {
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
 }
 
 .round-result .choice-space {
     display:flex;
     justify-content: space-evenly;
+}
+
+.round-result .choice-space #round-choice-computer {
+    color: red;
+}
+
+.round-result .choice-space #round-choice-player {
+    color: green;
 }
