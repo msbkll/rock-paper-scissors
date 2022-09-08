@@ -56,3 +56,12 @@ body {
     width: 150px;
 }
 
+.round-result {
+    font-size: 15px;
+    text-align: center;
+}
+
+.round-result .choice-space {
+    display:flex;
+    justify-content: space-evenly;
+}
