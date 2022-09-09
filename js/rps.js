@@ -60,12 +60,36 @@ function playRound (playerSelection, computerSelection) {
         const scissor = document.querySelector("#scissor");
         
         rock.addEventListener("click", (e) => {
-            playRound(e.target.id,getComputerChoice());
+            
+            if (playerScore || computerScore != 5) {
+                playRound(e.target.id,getComputerChoice());
+            } else if (playerScore === 5) {
+                endScore.textContent = "U got first 5 Wins Congratulations!"
+            } else if (computerScore === 5) {
+                endScore.textContent = "The Computer won against u!"
+
+            }
+            
+
         });
         paper.addEventListener("click", (e) => {
-            playRound(e.target.id,getComputerChoice());
+            if (playerScore || computerScore != 5) {
+                playRound(e.target.id,getComputerChoice());
+            } else if (playerScore === 5) {
+                endScore.textContent = "U got first 5 Wins Congratulations!"
+            } else if (computerScore === 5) {
+                endScore.textContent = "The Computer won against u!"
+
+            }
         });
         scissor.addEventListener("click", (e) => {
-            playRound(e.target.id,getComputerChoice());
+            if (playerScore || computerScore != 5) {
+                playRound(e.target.id,getComputerChoice());
+            } else if (playerScore === 5) {
+                endScore.textContent = "U got first 5 Wins Congratulations!"
+            } else if (computerScore === 5) {
+                endScore.textContent = "The Computer won against u!"
+
+            }
         });
 
