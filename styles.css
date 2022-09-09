@@ -73,3 +73,8 @@ body {
 .round-result .choice-space #round-choice-player {
     color: darkgreen;
 }
+
+#end-score {
+    font-size: 50px;
+    color: black;
+}

@@ -21,7 +21,6 @@ function playerText (player,computer) {
 
 let computerScore = document.getElementById("computer-score");
 let playerScore = document.getElementById("player-score");
-let endScore = document.getElementById("end-score");
 const roundConclusion = document.getElementById("round-conclusion")
 
 function playRound (playerSelection, computerSelection) {
@@ -61,35 +60,53 @@ function playRound (playerSelection, computerSelection) {
         
         rock.addEventListener("click", (e) => {
             
-            if (playerScore || computerScore != 5) {
+            let endScore = document.getElementById("end-score");
+            if ((playerScore.innerHTML != 5) && (computerScore.innerHTML != 5)) {
                 playRound(e.target.id,getComputerChoice());
-            } else if (playerScore === 5) {
-                endScore.textContent = "U got first 5 Wins Congratulations!"
-            } else if (computerScore === 5) {
-                endScore.textContent = "The Computer won against u!"
+            }
+            if (playerScore.innerHTML == 5) {
+                endScore.textContent = "Congratulations! U won against the Computer! "
+                endScore.style['color'] = "darkgreen";
 
             }
-            
+            if (computerScore.innerHTML == 5) {
+                endScore.textContent = "UNLUCKY! u lost against the computer!!!"
+                endScore.style['color'] = "darkred";
+            }
 
         });
         paper.addEventListener("click", (e) => {
-            if (playerScore || computerScore != 5) {
-                playRound(e.target.id,getComputerChoice());
-            } else if (playerScore === 5) {
-                endScore.textContent = "U got first 5 Wins Congratulations!"
-            } else if (computerScore === 5) {
-                endScore.textContent = "The Computer won against u!"
 
+            let endScore = document.getElementById("end-score");
+            if ((playerScore.innerHTML != 5) && (computerScore.innerHTML != 5)) {
+                playRound(e.target.id,getComputerChoice());
             }
+            if (playerScore.innerHTML == 5) {
+                endScore.textContent = "Congratulations! U won against the Computer! "
+                endScore.style['color'] = "darkgreen";
+            }
+            if (computerScore.innerHTML == 5) {
+                endScore.textContent = "UNLUCKY! u lost against the computer!!!"
+                endScore.style['color'] = "darkred";
+            }
+                   
         });
         scissor.addEventListener("click", (e) => {
-            if (playerScore || computerScore != 5) {
+            
+            let endScore = document.getElementById("end-score");
+            if ((playerScore.innerHTML != 5) && (computerScore.innerHTML != 5)) {
                 playRound(e.target.id,getComputerChoice());
-            } else if (playerScore === 5) {
-                endScore.textContent = "U got first 5 Wins Congratulations!"
-            } else if (computerScore === 5) {
-                endScore.textContent = "The Computer won against u!"
+            }
+            if (playerScore.innerHTML == 5) {
+                endScore.textContent = "Congratulations! U won against the Computer! "
+                endScore.style['color'] = "darkgreen";
 
             }
+            if (computerScore.innerHTML == 5) {
+                endScore.textContent = "UNLUCKY! u lost against the computer!!!"
+                endScore.style['color'] = "darkred";
+
+            }
+                   
         });
 
